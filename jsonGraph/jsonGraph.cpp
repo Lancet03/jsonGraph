@@ -97,7 +97,10 @@ int main()
     graph.edges = std::vector<Edge>{ {1, 2, 1} };
     graph.vertex = std::vector<Vertex>{ {1, "a"}, {2, "b"} };
 
-    try
+    graph.PrintCorrespMatrix();
+
+
+    /*try
     {
         auto books = LoadFromFile("books.json");
         PrintBooksList(books);
@@ -106,5 +109,5 @@ int main()
         std::cout << "Error: " << e.what() << std::endl;
     }
     int n;
-    std::cin >> n;
+    std::cin >> n;*/
 }
